@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #0902d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+#calc {
+    width: 400px;
+    padding: .6em;
+    background-color: #00005b;
+    color: #2511d0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 12px 12px 20px -11px rgb(64, 60, 65);
+}
+
+#calc h3 {
+    font-size: .9em;
+    font-weight: 700;
+    color: #ffff00;
+    padding: 20px;
+}
+
+#operations {
+    text-align: right;
+}
+
+#previous-operation,
+#current-operation {
+    min-height: 1.8em;
+    overflow-wrap: break-word;
+    padding: 0.2em;
+}
+
+#previous-operation {
+    color: #5348c9;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#current-operation {
+    background-color: #9bc5eb;
+    border-radius: 15px;
+    margin: 15px;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#buttons-contanier {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+#buttons-contanier button {
+    border: none;
+    border-radius: 50px;
+    height: 4em;
+    background-color: #fbff73;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 20px;
+}
+
+#buttons-contanier .number {
+    background-color: #ffff00;
+}
+
+#buttons-contanier #equal-btn {
+    grid-column: span 2;
+    background-color: #210fd8;
+}
+
+#buttons-contanier button:hover {
+    opacity: 0.8;
+}
