@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #79451d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+#calc {
+    width: 400px;
+    padding: .6em;
+    background-color: #2f2c2b;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+}
+
+#calc h3 {
+    font-size: .9em;
+    font-weight: 700;
+    color: #79451d;
+    padding: 20px;
+}
+
+#operations {
+    text-align: right;
+}
+
+#previous-operation,
+#current-operation {
+    min-height: 1.8em;
+    overflow-wrap: break-word;
+    padding: 0.2em;
+}
+
+#previous-operation {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#current-operation {
+    background-color: #79451d;
+    border-radius: 15px;
+    margin: 15px;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+#buttons-contanier {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+#buttons-contanier button {
+    border: none;
+    border-radius: 15px;
+    height: 4em;
+    background-color: #dfba69;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 20px;
+}
+
+#buttons-contanier .number {
+    background-color: #413726;
+}
+
+#buttons-contanier #equal-btn {
+    grid-column: span 2;
+    background-color: #fff;
+}
+
+#buttons-contanier button:hover {
+    opacity: 0.8;
+}
